@@ -1,0 +1,24 @@
+2019-11-1:
+程序已把新建文件界面做好，还差该界面“确认”、“取消”按钮的实现。其他按钮还未开工。
+确认按钮：点击后触发SureListener事件，读取界面fileName输入框字符串，并自动判断是否带后缀.java，若没有，则自动加上，反之则不用加。
+	         然后将savePath文本框中的字符串读出，在该绝对路径下建立"fileName".java文件。
+取消按钮：点击后关闭该窗口。
+
+2019-11-4:
+已完成的类：
+	CancelListener.java
+	NewFileListener.java
+	NewFileWindow.java
+	OpenFileListener.java
+	SaveFileMethod.java
+	SureListener.java
+未完成的按钮：
+	打开文件，保存文件，编译，运行
+	保存文件：
+		在SaveFileMehod.java中加入saveCode(String savePath, String codes);
+	打开文件：
+		新建类OpenFileListener.java，调用OpenFileMethod.String OpenFile(String savePath, String codes);
+	编译、运行暂无想法，可能需要调用cmd中的java和javac，还未仔细查询，以后再说。
+
+2019-11-6:
+SaveFileListener.java会出现savePath为空的情况，待解决。
